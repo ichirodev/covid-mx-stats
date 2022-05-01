@@ -1,0 +1,39 @@
+.login-topbar {
+    height: 5vh;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(90, 146, 219);
+}
+
+.login-topbar-icon {
+    color: aliceblue;
+    max-width: 2em;
+    margin-left: 1vw;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    min-height: 400px;
+    height: 95vh;
+    flex-direction: column;
+}
+
+.login-form {
+    width: 24vw;
+    min-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+}
+
+.register-box {
+    margin: 10px;
+}

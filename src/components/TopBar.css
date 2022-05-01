@@ -1,0 +1,12 @@
+.topbar {
+    background-color: rgb(90, 146, 219);
+    border-radius: 8px;
+    margin: 1vh;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left:0.4vw;
+}
+
+.topbar-text {
+    color: rgb(243, 243, 243);
+}
