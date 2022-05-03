@@ -5,8 +5,31 @@
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left:0.4vw;
+    display: flex;
+    align-items: center;
 }
 
 .topbar-text {
     color: rgb(243, 243, 243);
+}
+
+.topbar-dropdown {
+    color: rgb(243, 243, 243);
+    background-color:transparent;
+    border-color: transparent;
+    transition-duration: 999s;
+}
+
+.topbar-dropdown:hover {
+    background-color:transparent;
+    border-color: transparent;
+}
+
+.topbar-dropdown:checked {
+    background-color:transparent;
+    border-color: transparent;
+}
+.topbar-dropdown:focus {
+    background-color:transparent;
+    border-color: transparent;
 }
