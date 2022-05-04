@@ -1,0 +1,9 @@
+.graphics {
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    height: 90vh;
+    min-height: 600px;
+    min-width: 480px;
+}
