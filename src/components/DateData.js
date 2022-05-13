@@ -51,10 +51,10 @@ const DateData = () => {
         width={600}
         options={lineOptions}
         data={{
-          labels: ["Jalisco", "Veracruh", "Sinaloa"],
+          labels: ["10/10/21", "10/10/22", "10/10/23", "10/10/24"],
           datasets: [
             {
-              data: [1000, 1320, 1290],
+              data: [10000, 25410, 44201, 12311],
               backgroundColor: "rgb(219, 38, 123)",
               borderColor: "rgba(48, 28, 37, 0.699)",
             },
