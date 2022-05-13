@@ -108,7 +108,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Tipo de paciente</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="tipo_paciente">
                 <option>Seleccione un tipo de paciente</option>
                 <option value="1"> AMBULATORIO </option>
                 <option value="2"> HOSPITALIZADO </option>
@@ -142,14 +142,14 @@ export default class Dashboard extends Component {
               <Form.Label>Edad</Form.Label>
               <Form.Control type="text" placeholder="75" />
               <Form.Label>Nacionalidad</Form.Label>
-              <Form.Select aria-label="sexo">
-                <option>Seleccione una opción para sexo</option>
+              <Form.Select aria-label="nacionalidad">
+                <option>Seleccione una opción para nacionalidad</option>
                 <option value="1"> MEXICANA </option>
                 <option value="2"> EXTRANJERA </option>
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Embarazo</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="embarazo">
                 <option>Seleccione una opción para embarazo</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>
@@ -158,7 +158,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Diabetes</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="diabetes">
                 <option>Seleccione una opción para diabetes</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>
@@ -167,7 +167,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Asma</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="asma">
                 <option>Seleccione una opción para asma</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>
@@ -176,7 +176,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Inmunosupresión</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="inmunosupresion">
                 <option>Seleccione una opción para inmunosupresión</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>
@@ -185,7 +185,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Hipertension</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="hipertension">
                 <option>Seleccione una opción para hipertension</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>
@@ -194,7 +194,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Problemas cardiovasculares</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="cardiovascular">
                 <option>
                   Seleccione una opción que identifique problemas
                   cardiovasculares
@@ -206,7 +206,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Obesidad</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="obesidad">
                 <option>Seleccione una opción para obesidad</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>
@@ -215,7 +215,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Tabaquismo</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="tabaquismo">
                 <option>
                   Seleccione una opción acerca del habito de tabaquismo
                 </option>
@@ -226,7 +226,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Tuvo contacto con otro caso de COVID...</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="otro_caso">
                 <option>
                   Seleccione una opción de contacto con casos SARS CoV-2
                 </option>
@@ -237,7 +237,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Se tomó una muestra de laboratorio</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="toma_muestra_lab">
                 <option>
                   Seleccione una opción sobre si se tomó una muestra de
                   laboratorio
@@ -249,7 +249,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Resultado de muestra laboratorio</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="resultado_lab">
                 <option>
                   Seleccione un resultado de la muestra de laboratorio
                 </option>
@@ -260,7 +260,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO APLICA (CASO SIN MUESTRA) </option>
               </Form.Select>
               <Form.Label>Se tomó una muestra de antigeno</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="toma_muestra_antigeno">
                 <option>
                   Seleccione una opción sobre si se tomó una muestra de antígeno
                 </option>
@@ -271,7 +271,7 @@ export default class Dashboard extends Component {
                 <option value="99"> NO ESPECIFICADO </option>
               </Form.Select>
               <Form.Label>Resultado antigeno</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="resultado_antigeno">
                 <option>
                   Seleccione un resultado de la muestra de antigeno
                 </option>
@@ -280,7 +280,7 @@ export default class Dashboard extends Component {
                 <option value="97"> NO APLICA (CASO SIN MUESTRA) </option>
               </Form.Select>
               <Form.Label>Clasificación final</Form.Label>
-              <Form.Select aria-label="clasificacion-final">
+              <Form.Select aria-label="clasificacion_final">
                 <option>Seleccione una opción de clasificación final</option>
                 <option value="1">
                   CASO DE COVID-19 CONFIRMADO POR ASOCIACIÓN CLÍNICA
@@ -296,7 +296,7 @@ export default class Dashboard extends Component {
                 <option value="7"> NEGATIVO </option>
               </Form.Select>
               <Form.Label>Migrante</Form.Label>
-              <Form.Select aria-label="sexo">
+              <Form.Select aria-label="migrante">
                 <option>Seleccione una opción de migrante</option>
                 <option value="1"> SI </option>
                 <option value="2"> NO </option>

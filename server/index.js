@@ -1,10 +1,21 @@
+/**
+ * Made by: Ichirodev
+ * Check this repository on Github: github.com/ichirodev/covid-mx-stats
+ */
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const { Client } = require("pg");
-const log = console.log;
-const accessKeys = require("./ak");
+const { Client } = require("pg"); // Node-postgres connection
+const accessKeys = require("./ak"); // Valid admin access keys for registration
 
+/**
+ * Misc
+ */
+const log = console.log;
+
+/**
+ * Database
+ */
 const dbClient = new Client({
   host: "localhost",
   password: "Zawarudo",
@@ -19,11 +30,15 @@ const connectToDatabase = async () => {
   return res;
 };
 
-/// Middleware
+/**
+ * Middleware
+ */
 app.use(cors());
 app.use(express.json());
 
-/// Routes (Queries)
+/**
+ * Routes (Queries)
+ */
 // Create an user
 app.post("/signup", async (req, res) => {
   try {
