@@ -9,6 +9,7 @@ CREATE TABLE admins(
 DROP TABLE IF EXISTS patients;
 
 CREATE TABLE patients(
+    patientid SERIAL PRIMARY KEY,
     fecha_actualizacion VARCHAR(11) NOT NULL,
     id_registro VARCHAR(16),
     origen SMALLINT, 
@@ -20,7 +21,7 @@ CREATE TABLE patients(
     tipo_paciente SMALLINT, 
     fecha_ingreso VARCHAR(11),
     fecha_sintomas VARCHAR(11),
-    fecha_def VARCHAR(11) DEFAULT '2099-12-31',
+    fecha_def VARCHAR(11) DEFAULT '9999-99-99',
     intubado SMALLINT DEFAULT 99, 
     neumonia SMALLINT DEFAULT 99,
     edad SMALLINT,
@@ -44,6 +45,7 @@ CREATE TABLE patients(
     pais_nacionalidad TEXT,
     uci SMALLINT DEFAULT 99
 );
+
 
 /* EXAMPLE INSERT QUERY */
 INSERT INTO patients (fecha_actualizacion, id_registro, origen, sector, entidad_um, sexo, 
