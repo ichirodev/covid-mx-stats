@@ -31,9 +31,6 @@ const HomePage = () => {
             <Dropdown.Item onClick={() => setActive(2)}>
               Por tipo de paciente
             </Dropdown.Item>
-            <Dropdown.Item onClick={() => setActive(3)}>
-              Por otros
-            </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <div style={{ width: "100%" }}></div>
@@ -63,7 +60,7 @@ const HomePage = () => {
         {activeComponent === 0 && <EntityData />}
         {activeComponent === 1 && <DateData />}
         {activeComponent === 2 && <PatientData />}
-        {activeComponent === 3 && <OtherData />}
+        {/*activeComponent === 3 && <OtherData />*/}
       </div>
     </>
   );

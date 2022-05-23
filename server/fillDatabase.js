@@ -17,12 +17,19 @@ const dbClient = new Client({
 
 const connectToDatabase = async () => {
   await dbClient.connect();
-  //const res = await dbClient.query("DELETE FROM patients");
-  const res = await dbClient.query("SELECT * FROM admins");
+  const res = await dbClient.query("DELETE FROM patients");
+  //const res = await dbClient.query("SELECT * FROM admins");
   return res;
 };
 
 function num(n) {
+  if (n.includes(`"`)) {
+    let number = n.split(`"`);
+    let x = parseInt(number[1]);
+    if (x > -1 || x < 100) {
+      return x;
+    }
+  }
   if (isNaN(n)) {
     return 99;
   }
