@@ -291,6 +291,7 @@ const dbClient = new Client({
   port: 5432,
 });
 
+// Connect a client to postgresql
 const connectToDatabase = async () => {
   await dbClient.connect();
   const res = await dbClient.query("SELECT * FROM admins");
@@ -303,6 +304,8 @@ const connectToDatabase = async () => {
 app.use(cors());
 app.use(express.json());
 app.use(function (req, res, next) {
+  // API Response headers (Browsers won't receive
+  // the response without this)
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header(
     "Access-Control-Allow-Headers",
@@ -334,7 +337,7 @@ app.post("/signup", async (req, res) => {
     console.error(err.message);
   }
 });
-// Login to an existent account
+// Login
 app.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -354,7 +357,7 @@ app.post("/login", async (req, res) => {
     console.error(err.message);
   }
 });
-// Return the stats per entity
+// Return the stats per entity (USING DATA FROM OBJECTS OF TYPE patient)
 app.post("/entity", async (req, res) => {
   let { reqTime } = req.body;
   try {
@@ -365,7 +368,7 @@ app.post("/entity", async (req, res) => {
     } else {
       res.json({
         status: 200,
-        message: "can not retrieve any data",
+        message: "can not retrieve the asked data",
       });
     }
   } catch (err) {
@@ -414,7 +417,7 @@ app.get("/date", async (req, res) => {
     console.error(err.message);
   }
 });
-// Return
+// Return the stats per date (USING DATA FROM THE OBJECTS OF TYPE patient)
 app.post("/dateLatest", async (req, res) => {
   let { reqTime } = req.body;
   if (reqTime == "month") {
@@ -425,15 +428,13 @@ app.post("/dateLatest", async (req, res) => {
     return;
   }
   res.json({
-    message: `can not retrieve any data`,
+    message: "can not retrieve the asked data",
     status: 200,
   });
 });
-
-// Return the stats per type of patient
+// Return the stats per type of patient (USING DATA FROM THE OBJECTS OF TYPE patient)
 app.post("/typeLatest", async (req, res) => {
   let { reqTime } = req.body;
-
   if (reqTime == "month") {
     res.json(patTypeMonthData.getDataByTypes());
     return;

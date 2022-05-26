@@ -54,12 +54,12 @@ neumonia, edad, nacionalidad, embarazo, diabetes, asma, inmusupr, hipertension, 
 obesidad, renal_cronica, tabaquismo, otro_caso, toma_muestra_lab, resultado_lab, toma_muestra_antigeno,
 resultado_antigeno, clasificacion_final, migrante, pais_nacionalidad, uci) VALUES(
     "AAAA-MM-DD", 
-    "TestReg0", 
+    "registro1", 
     1, 2, 3, 1, 1, 1, 1, 
     "AAAA-MM-DD", "AAAA-MM-DD", "AAAA-MM-DD", 
     99, 99, 76, 
     1, 99, 99, 99, 99, 99, 99, 99, 99, 99, 98,
     1, 1, 1, 1, 1,
-    99, "Somewhere",
+    99, "NACIONALIDAD",
     99
 );

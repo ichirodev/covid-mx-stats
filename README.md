@@ -1,5 +1,12 @@
-# COVID-MX-STATS
+# COVID-MX-STATS / Estadisticas de COVID en México
+## About
+COVID-MX-STATS is a project which only objective is to show the COVID data in easy to understand charts.
 
+This project is open source, so feel free to clone, modify and make pull requests!
+## Screenshots
+![Chart for cases by date](images/stats_by_date.PNG)
+![Chart for cases per entity](images/stats_by_entity.PNG)
+![Chart for special type of patients](images/stats_by_type.PNG)
 ## Usage
 **Back-end** - To start the development server
 ```
@@ -28,3 +35,4 @@ cd server; npm run fill-db
 
 
 ---
+The data about COVID shown in this project is given by the Mexico's government on its open data site. I don't own any of that information.

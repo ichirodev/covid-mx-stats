@@ -45,16 +45,6 @@ const HomePage = () => {
         >
           Versión Alpha
         </Badge>
-        <Link
-          to="/login"
-          style={{
-            textDecoration: "none !important",
-            marginLeft: "4px",
-            marginRight: "10px",
-          }}
-        >
-          <MdOutlineDashboard className="topbar-text" size="25" />
-        </Link>
       </div>
       <div>
         {activeComponent === 0 && <EntityData />}
